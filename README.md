@@ -1,1 +1,3 @@
-This is a README for the example git hub repository.
+Requirements.txt can be created using 
+code pip -m > requirements.txt
+
