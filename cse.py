@@ -1,6 +1,7 @@
 import pprint, json
-from googleapiclient.discovery import build
 import config
+from googleapiclient.discovery import build
+
 my_api_key = config.my_api_key #The API_KEY you aquired
 my_cse_id = config.my_cse_id # The search-engine-ID you created
 # cse: custom search engine
