@@ -12,4 +12,5 @@ def handle_slash():
 @app.route("/query", strict_slashes=False)
 def handle_query():
     query_term = request.args.get("q")
-    return jsonify({"query_term": query_term, "search_results": query_on_whoosh.query(query_term)})
+    query_page = int(request.args.get("p"))
+    return jsonify({"query_term": query_term, "search_results": query_on_whoosh.query(query_term, 10, query_page)})
