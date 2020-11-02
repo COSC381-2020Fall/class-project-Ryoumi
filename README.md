@@ -6,7 +6,7 @@ Python version : 3.7.9
 1. modify config.py to add your api key and cse key
 2. run: `python3 cse.py`
 ## Retrieves Video Ids from search results
-1. run `python3 download_youtube_data.py google_search.json video_ids.txt`
+1. run `python3 parse_search_results.py google_search.json videoids.txt`
 ## Retrieves Youtube Data
 1. run `python3 download_youtube_data.py video_ids.txt`
 ## Prepares for Whoosh Index
