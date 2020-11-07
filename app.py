@@ -48,6 +48,5 @@ def handle_request():
     server = smtplib.SMTP("smtp.gmail.com", 587)
     server.starttls()
     server.login("ddaloisi@emich.edu", config.gmail_password)
-    message = 'Subject: {}\n\n{}'.format("Request to add new data", "request to add: " + topic)
-    server.sendmail("ddaloisi@emich.edu", "ddaloisi@emich.edu", + message)
+    server.sendmail("ddaloisi@emich.edu", "ddaloisi@emich.edu", "request " + new_data)
     return render_template("success.html", new_data=new_data)
